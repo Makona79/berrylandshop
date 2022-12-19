@@ -1026,7 +1026,14 @@ a {
   }
 }
 .tabs__box {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
 }
 .tabs__box.hide {
   display: none;
